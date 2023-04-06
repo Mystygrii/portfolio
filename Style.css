@@ -1,0 +1,41 @@
+/*Paramètres généraux*/
+:root {
+    /*Jaune pâle*/
+    --bgMainColor: #f8e1b7;
+
+    /*blanc pur*/
+    --txtMainColor: #FEFEFE;
+
+    /*autre*/
+    --txtSecondary: #00000B;
+}
+
+
+html {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.nav-span {
+    color: var(--txtMainColor);
+    font-size: 1.3rem;
+}
+
+.main {
+    background-color: var(--bgMainColor);
+    color: var(--txtSecondary);
+}
+
+.downloadCV {
+    border-radius: 8px;
+    background-color: black;
+    margin-right: 0px;
+
+}
+
+.downloadCV a {
+    text-decoration: none;
+    color: var(--txtMainColor);
+}
