@@ -7,20 +7,29 @@
     --txtMainColor: #FEFEFE;
 
     /*autre*/
-    --txtSecondary: #00000B;
-}
+    --txtSecondary: rgb(53, 51, 1);
 
-
-html {
-    font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
+#nav{
+    padding: 10px 0 0 10px;
+    margin: 10px 0 0 0;
+}
+
+.nav-content{
+    background-color: #1d7ab8;
+}
 
 .nav-span {
     color: var(--txtMainColor);
     font-size: 1.3rem;
+}
+
+.nav-span-title {
+    color: var(--txtMainColor);
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .main {
