@@ -1,0 +1,50 @@
+/*Paramètres généraux*/
+:root {
+    /*jaune de naples*/
+    --bgMainColor: #fff0bc;
+
+    /*blanc*/
+    --txtMainColor: #ffffff;
+
+    /*texte*/
+    --txtSecondColor: #514837;
+
+    /*familles de polices*/
+    --fontFam : 'Poppins', cursive;
+}
+
+.spacer{
+    max-width: 100%;
+    width: 100vw;
+    height: 3vh;
+    background-color: var(--bgMainColor);
+}
+
+.about {
+    max-width: 100%;
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--bgMainColor);
+    color: var(--txtSecondColor);
+}
+
+.skills{
+    background-color: var(--bgMainColor);
+    color: var(--txtSecondColor);
+}
+
+.skills div{
+    max-width: 100%;
+}
+
+.downloadCV {
+    border-radius: 8px;
+    background-color: black;
+    margin-right: 0px;
+
+}
+
+.downloadCV a {
+    text-decoration: none;
+    color: var(--txtMainColor);
+}

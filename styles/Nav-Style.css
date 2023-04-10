@@ -1,25 +1,22 @@
 /*Paramètres généraux*/
 :root {
-    /*Jaune pâle*/
-    --bgMainColor: #f8e1b7;
 
-    /*blanc pur*/
+
+    --bgSecondColor: #1d7ab8;
+
+    /*Texte
+      blanc pur*/
     --txtMainColor: #FEFEFE;
-
-    /*texte*/
-    --txtSecondary: rgb(53, 51, 1);
-
     /*familles de polices*/
     --fontFam : 'Poppins', cursive;
 }
 
 #nav{
     padding: 10px 0 0 10px;
-    margin: 10px 0 0 0;
 }
 
 .nav-content{
-    background-color: #1d7ab8;
+    background-color: var(--bgSecondColor);
 }
 
 a .nav-span-title{
@@ -40,21 +37,4 @@ a .nav-span-title{
     color: var(--txtMainColor);
     font-size: 1.5rem;
     font-weight: 500;
-}
-
-.main {
-    background-color: var(--bgMainColor);
-    color: var(--txtSecondary);
-}
-
-.downloadCV {
-    border-radius: 8px;
-    background-color: black;
-    margin-right: 0px;
-
-}
-
-.downloadCV a {
-    text-decoration: none;
-    color: var(--txtMainColor);
 }
