@@ -6,10 +6,11 @@
     /*blanc pur*/
     --txtMainColor: #FEFEFE;
 
-    /*autre*/
+    /*texte*/
     --txtSecondary: rgb(53, 51, 1);
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*familles de polices*/
+    --fontFam : 'Poppins', cursive;
 }
 
 #nav{
@@ -21,9 +22,18 @@
     background-color: #1d7ab8;
 }
 
+a .nav-span-title{
+    color: var(--txtMainColor);
+    font-family: var(--fontFam);
+    font-size: 26px;
+    font-weight: 500;
+}
+
 .nav-span {
     color: var(--txtMainColor);
-    font-size: 1.3rem;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: var(--fontFam);
 }
 
 .nav-span-title {
