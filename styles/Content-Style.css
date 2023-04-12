@@ -4,47 +4,69 @@
     --bgMainColor: #fff0bc;
 
     /*blanc*/
-    --txtMainColor: #ffffff;
+    --white: #ffffff;
 
     /*texte*/
-    --txtSecondColor: #514837;
+    --txtColor: #514837;
 
     /*familles de polices*/
-    --fontFam : 'Poppins', cursive;
+    --fontFam: 'Poppins', cursive;
 }
 
-.spacer{
+.about {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.about > *{
+    flex: 1 100%;
+}
+
+.PP{
+    border:1px black solid; 
+    width: 120px;
+    order: 1;
+}
+
+.txt-container-about{
+    order: 1;
+}
+
+.txt-container-watch{
+    order: 3;
+}
+
+.downloadCV {
+    transform: translateY(0);
+    transition-duration: 0.85s;
+    order: 4;
+}
+
+
+.downloadCV:hover {
+    transform: translateY(-8px);
+    transition-duration: 0.85s;
+}
+
+.content {
+    border: black 2px solid;
+    padding: 0;
+}
+
+.spacer {
+    display: flex;
     max-width: 100%;
     width: 100vw;
     height: 3vh;
     background-color: var(--bgMainColor);
 }
 
-.about {
-    max-width: 100%;
-    width: 100vw;
-    height: 50vh;
-    background-color: var(--bgMainColor);
-    color: var(--txtSecondColor);
-}
+@keyframes moveUp {
+    from {
+        transform: translateY(0);
+    }
 
-.skills{
-    background-color: var(--bgMainColor);
-    color: var(--txtSecondColor);
-}
-
-.skills div{
-    max-width: 100%;
-}
-
-.downloadCV {
-    border-radius: 8px;
-    background-color: black;
-    margin-right: 0px;
-
-}
-
-.downloadCV a {
-    text-decoration: none;
-    color: var(--txtMainColor);
+    to {
+        transform: translateY(-8px);
+    }
 }
