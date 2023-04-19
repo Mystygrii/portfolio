@@ -1,7 +1,8 @@
 /*Paramètres généraux*/
 :root {
     /*jaune de naples*/
-    --bgMainColor: #fff0bc;
+    --bgMainColor: #fce9a5;
+    --bgSecond: #afa272;
 
     /*blanc*/
     --white: #ffffff;
@@ -13,43 +14,48 @@
     --fontFam: 'Poppins', cursive;
 }
 
-.about {
+.about-wrapper {
+    padding: 12px;
     display: flex;
     flex-flow: row wrap;
+    align-items: baseline;
+    color: var(--txtColor);
+    background-color: var(--bgMainColor);
 }
 
-.about > *{
-    flex: 1 100%;
+.txt-container-about {
+    flex: 50%;
 }
 
-.PP{
-    border:1px black solid; 
-    width: 120px;
-    order: 1;
+.txt-container-watch {
+    flex: 8 40%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
-.txt-container-about{
-    order: 1;
-}
-
-.txt-container-watch{
-    order: 3;
-}
 
 .downloadCV {
-    transform: translateY(0);
+    border: 0px;
+    width: 200px;
+    height: 50px;
     transition-duration: 0.85s;
-    order: 4;
+    right: 50%;
+    background-color: var(--bgSecond);
 }
 
+.downloadCV a {
+    text-decoration: none;
+    color: var(--white);
+}
 
 .downloadCV:hover {
-    transform: translateY(-8px);
+    transform: scale(1.110);
     transition-duration: 0.85s;
 }
 
 .content {
-    border: black 2px solid;
     padding: 0;
 }
 
@@ -57,16 +63,5 @@
     display: flex;
     max-width: 100%;
     width: 100vw;
-    height: 3vh;
-    background-color: var(--bgMainColor);
-}
-
-@keyframes moveUp {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-8px);
-    }
+    height: 3.2vh;
 }
