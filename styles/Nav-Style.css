@@ -1,40 +1,41 @@
 /*Paramètres généraux*/
 :root {
-
-
     --bgSecondColor: #1d7ab8;
 
     /*Texte
       blanc pur*/
     --txtMainColor: #FEFEFE;
     /*familles de polices*/
-    --fontFam : 'Poppins', cursive;
+    --fontFam: 'Poppins', cursive;
 }
 
-#nav{
-    padding: 10px 0 0 10px;
-}
+@media all and (min-width: 768px) {
 
-.nav-content{
-    background-color: var(--bgSecondColor);
-}
+    #nav {
+        padding: 10px 0 0 10px;
+    }
 
-a .nav-span-title{
-    color: var(--txtMainColor);
-    font-family: var(--fontFam);
-    font-size: 26px;
-    font-weight: 500;
-}
+    .nav-content {
+        background-color: var(--bgSecondColor);
+    }
 
-.nav-span {
-    color: var(--txtMainColor);
-    font-size: 21px;
-    font-weight: 300;
-    font-family: var(--fontFam);
-}
+    a .nav-span-title {
+        color: var(--txtMainColor);
+        font-family: var(--fontFam);
+        font-size: 26px;
+        font-weight: 500;
+    }
 
-.nav-span-title {
-    color: var(--txtMainColor);
-    font-size: 1.5rem;
-    font-weight: 500;
+    .nav-span {
+        color: var(--txtMainColor);
+        font-size: 21px;
+        font-weight: 300;
+        font-family: var(--fontFam);
+    }
+
+    .nav-span-title {
+        color: var(--txtMainColor);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 }

@@ -1,67 +1,143 @@
 /*Paramètres généraux*/
 :root {
-    /*jaune de naples*/
-    --bgMainColor: #fce9a5;
-    --bgSecond: #afa272;
+	/*jaune de naples*/
+	--bgMainColor: #fce9a5;
+	--bgSecond: #afa272;
 
-    /*blanc*/
-    --white: #ffffff;
+	/*blanc*/
+	--white: #ffffff;
 
-    /*texte*/
-    --txtColor: #514837;
+	/*texte*/
+	--txtColor: #514837;
 
-    /*familles de polices*/
-    --fontFam: 'Poppins', cursive;
-}
-
-.about-wrapper {
-    padding: 12px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: baseline;
-    color: var(--txtColor);
-    background-color: var(--bgMainColor);
-}
-
-.txt-container-about {
-    flex: 50%;
-}
-
-.txt-container-watch {
-    flex: 8 40%;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+	/*familles de polices*/
+	--fontFam: 'Poppins', cursive;
 }
 
 
-.downloadCV {
-    border: 0px;
-    width: 200px;
-    height: 50px;
-    transition-duration: 0.85s;
-    right: 50%;
-    background-color: var(--bgSecond);
-}
+@media all and (min-width: 768px) {
 
-.downloadCV a {
-    text-decoration: none;
-    color: var(--white);
-}
+	.about-wrapper {
+		padding: 12px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		row-gap: 10px;
+		color: var(--txtColor);
+		font-size: 18px;
+		background-color: var(--bgMainColor);
+	}
 
-.downloadCV:hover {
-    transform: scale(1.110);
-    transition-duration: 0.85s;
-}
+	.profile {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		flex-direction: column;
+		flex: 30%;
+	}
 
-.content {
-    padding: 0;
-}
+	.about-main {
+		flex: 8 50%;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		justify-items: center;
+	}
 
-.spacer {
-    display: flex;
-    max-width: 100%;
-    width: 100vw;
-    height: 3.2vh;
+	.downloadCV {
+		border: 0px;
+		width: 200px;
+		height: 50px;
+		transition-duration: 0.85s;
+		right: 50%;
+		background-color: var(--bgSecond);
+	}
+
+	.downloadCV a {
+		text-decoration: none;
+		color: var(--white);
+	}
+
+	.downloadCV:hover {
+		transform: scale(1.03);
+		transition-duration: 0.85s;
+	}
+
+	.spacer {
+		display: flex;
+		max-width: 100%;
+		width: 100vw;
+		height: 3.2vh;
+		background-color: var(--bgMainColor);
+	}
+
+	/* Progress bar style */
+
+	.skills-container {
+		flex: 8 10%;
+	}
+
+	.skills {
+		padding-top: 20px;
+		display: flex;
+		justify-content: space-around;
+		column-gap: 10px;
+	}
+
+	.progress-container {
+		display: flex;
+		width: 20%;
+		border-radius: 8px;
+		row-gap: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.circular-progress {
+		position: relative;
+		height: 110px;
+		width: 110px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.front-skills {
+		background: conic-gradient(#0d6efd 288deg, #e7e6e6 0deg);
+	}
+
+	.php-skills {
+		background: conic-gradient(#0d6efd 216deg, #e7e6e6 0deg);
+	}
+
+	.js-skills {
+		background: conic-gradient(#0d6efd 180deg, #e7e6e6 0deg);
+	}
+
+	.sql-skills {
+		background: conic-gradient(#0d6efd 216deg, #e7e6e6 0deg);
+	}
+
+	.cSharp-skills {
+		background: conic-gradient(#0d6efd 216deg, #e7e6e6 0deg);
+	}
+
+	.circular-progress::before {
+		content: "";
+		position: absolute;
+		height: 90px;
+		width: 90px;
+		border-radius: 50%;
+		background-color: #fce9a5;
+	}
+
+	.progress-value {
+		position: relative;
+		font-weight: 600;
+	}
+
+	.progress-container>.text {
+		font-weight: 400;
+	}
 }
