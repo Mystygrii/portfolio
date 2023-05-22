@@ -4,8 +4,9 @@
 	--bgMainColor: #fce9a5;
 	--bgSecond: #afa272;
 
-	/*blanc*/
+	/*couleurs*/
 	--white: #ffffff;
+	--lightGray: #dddcdc;
 
 	/*texte*/
 	--txtColor: #514837;
@@ -137,27 +138,27 @@
 	}
 
 	.html-skills::before {
-		content: url("../files/img/html.png");
+		content: url("../files/img/progress/html.png");
 	}
 
 	.css-skills::before {
-		content: url("../files/img/css.png");
+		content: url("../files/img/progress/css.png");
 	}
 
 	.php-skills::before {
-		content: url("../files/img/php.png");
+		content: url("../files/img/progress/php.png");
 	}
 
 	.js-skills::before {
-		content: url("../files/img/js.png");
+		content: url("../files/img/progress/js.png");
 	}
 
 	#skills-container div:nth-child(5) .circular-progress::before {
-		content: url("../files/img/sql.png");
+		content: url("../files/img/progress/sql.png");
 	}
 
 	#skills-container div:nth-child(6) .circular-progress::before {
-		content: url("../files/img/csharp.png");
+		content: url("../files/img/progress/csharp.png");
 	}
 
 	.progress-value {
@@ -212,11 +213,46 @@
 		margin: 0;
 		width: 300px;
 		height: 200px;
-		background: url("https://picsum.photos/300/200") no-repeat;
 		clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 90%, 90% 100%, 0% 100%);
 		border-radius: 10px;
 		transition: 0.85s;
 		z-index: 99;
+	}
+
+	.doc-card:nth-child(1) a {
+		background: url("../files/img/comp/sauvegardeBD.jpg") no-repeat center black;
+	}
+
+	.doc-card:nth-child(2) a {
+		background: url("../files/img/comp/parcInfo.jpg") no-repeat center rgb(230, 241, 245);
+	}
+
+	.doc-card:nth-child(3) a {
+		background: url("../files/img/comp/glpi.png") no-repeat center rgb(0, 167, 245);
+	}
+
+	.doc-card:nth-child(4) a {
+		background: url("../files/img/comp/dns.png") no-repeat center rgb(97,195,208);
+	}
+
+	.doc-card:nth-child(5) a {
+		background: url("../files/img/comp/selenium.png") no-repeat center rgb(0, 51, 160);
+	}
+
+	.doc-card:nth-child(6) a {
+		background: url("../files/img/comp/bugtracking.png");
+	}
+
+	.doc-card:nth-child(7) a {
+		background: url("../files/img/comp/wordpress.png");
+	}
+
+	.doc-card:nth-child(8) a {
+		
+	}
+	
+	.doc-card:nth-child(9) a {
+		
 	}
 
 	#docs-container div:nth-child(n) a:after {
@@ -230,7 +266,7 @@
 
 	#docs-container div:nth-child(n):hover a:after {
 		content: "";
-		opacity: 0.15;
+		opacity: 0.20;
 	}
 
 	.doc-card>span {
