@@ -247,13 +247,13 @@
 		background: url("../files/img/comp/wordpress.png");
 	}
 
-	.doc-card:nth-child(8) a {
+	/* .doc-card:nth-child(8) a {
 		
 	}
 	
 	.doc-card:nth-child(9) a {
 		
-	}
+	} */
 
 	#docs-container div:nth-child(n) a:after {
 		content: "";
@@ -266,7 +266,7 @@
 
 	#docs-container div:nth-child(n):hover a:after {
 		content: "";
-		opacity: 0.20;
+		opacity: 0.25;
 	}
 
 	.doc-card>span {
