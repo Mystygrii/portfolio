@@ -247,13 +247,33 @@
 		background: url("../files/img/comp/wordpress.png");
 	}
 
-	/* .doc-card:nth-child(8) a {
-		
+	.doc-card:nth-child(8) a {
+		background: url("../files/img/comp/wordpress.png");
 	}
 	
 	.doc-card:nth-child(9) a {
-		
-	} */
+		background: url("../files/img/comp/wordpress.png");
+	}
+
+	.doc-card:nth-child(10) a {
+		background: url("../files/img/comp/covoiturage.png");
+	}
+
+	.doc-card:nth-child(11) a {
+		background: url("../files/img/comp/covoiturage.png");
+	}
+
+	.doc-card:nth-child(12) a {
+		background: url("../files/img/comp/covoiturage.png");
+	}
+
+	.doc-card:nth-child(13) a {
+		background: url("../files/img/comp/covoiturage.png");
+	}
+
+	.doc-card:nth-child(14) a {
+		background: url("../files/img/comp/covoiturage.png");
+	}
 
 	#docs-container div:nth-child(n) a:after {
 		content: "";
